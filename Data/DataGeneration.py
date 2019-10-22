@@ -44,7 +44,7 @@ a_education = ['NA','elementary','middle','high','associate','bachelor','master'
 v_education = [0,1,2,3,4,5,6,7]
 p_education = [0.05,0.05,0.05,0.25,0.075,0.37,0.105,0.05]
 
-a_marriage = ['NA','not married', 'married', 'divorced']
+a_marriage = ['NA','married', 'not married', 'divorced']
 v_marriage = [0,1,2,3]
 p_marriage = [0.1,0.5,0.1,0.3]
     
