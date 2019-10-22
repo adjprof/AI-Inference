@@ -29,7 +29,7 @@ from random import randrange
 # ****************************************************
 
 vf_attributes = ["state_file_id", "dob", "sex", "party", "county__registered_address", "zip__registered_address", "state__registered_address", "federal_district"]
-synthetic_data_attributes = ['state', 'zipcode', 'ethnicity', 'income', 'age', 'sex', 'education', 'marriage', 'childen', 'party']
+synthetic_data_attributes = ['state', 'zipcode', 'ethnicity', 'income', 'age', 'sex', 'education', 'marriage', 'children', 'party']
 
 # var arrays for synthetic data generation
 a_ethnicity = ['NA','White','Black','Mexican','Native Indian','Asian']
