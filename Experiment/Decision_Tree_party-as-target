@@ -2,5 +2,13 @@
 
 -Synthetic attributes (???)
 -True party as labels
--Real Data: ?
--Anonymized data: ?
+
+-Real Data: 
+-IA_synthetic_full_data_Output_Oct21.csv
+-37% accuracy
+[[13831  9412  8080]
+ [ 9895  9176  6564]
+ [ 8488  6951  6569]]
+
+
+-Anonymized data: 
