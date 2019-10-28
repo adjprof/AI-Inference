@@ -30,19 +30,51 @@ clf.fit(X=X_train, y=y_train)
 clf.feature_importances_ 
 clf.score(X=X_test, y=y_test)
 
+# Predict, referenced from Matt
+y_predict = clf.predict(X_train)
+
+## Test how accurate we are
+print(accuracy_score(y_train, y_predict))
+
+## Check confusion matrix
+print(confusion_matrix(y_train, y_predict))
+
 --------------------------
 
 target,
 a_vote = ['NA','D','R']
 v_vote = [0,1,2]
 p_vote = [0.1,0.5,0.4]
-raw data, clf.score(X=X_test, y=y_test) 
+raw data, 
+clf.score(X=X_test, y=y_test) 
 0.4512926367510273
-k=2, actual k=17, clf.score(X=X_test, y=y_test) 
-0.5024924706615432
-k=30, actual k=156, clf.score(X=X_test, y=y_test) 
-0.5045695295461626
+print(accuracy_score(y_train, y_predict))
+0.6268649426067135
+print(confusion_matrix(y_train, y_predict))
+[[  9546  19770   7569]
+ [  3212 153568  27347]
+ [  2866  76740  67892]]
 
+k=2, actual k=17, 
+clf.score(X=X_test, y=y_test) 
+0.5024924706615432
+print(accuracy_score(y_train, y_predict))
+0.4978079448091688
+print(confusion_matrix(y_train, y_predict))
+[[    0  4374   149]
+ [    0 21650   642]
+ [    0 17401   719]]
+ 
+k=30, actual k=156, 
+clf.score(X=X_test, y=y_test) 
+0.49444386748364316
+print(accuracy_score(y_train, y_predict))
+0.49974407477467453
+print(confusion_matrix(y_train, y_predict))
+[[    0  4419    71]
+ [    0 22209   215]
+ [    0 17774   247]]
+ 
 ---------------------------
 
 target
