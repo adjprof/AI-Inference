@@ -2,11 +2,14 @@
 
 -Synthetic data (list which are syn)
 -Synthetic votes/labels
+
+-IA_synthetic_full_data_Output_Oct21.csv
 -Real data: 65% acc
 [[48494 14122   398]
  [12055  3421   104]
  [  271   100     1]]
 
+-k_3_anon_IA_data_full_Oct21.csv
 -Anonymized data: 78%
 [[61483  1348     7]
  [15366   344     6]
