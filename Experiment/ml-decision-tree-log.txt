@@ -1,0 +1,59 @@
+# Reference: https://github.com/BenBrostoff/ml-series-source/blob/master/src/4_decision_tree_intro.ipynb
+
+a_vote = ['NA','D','R']
+v_vote = [0,1,2]
+p_vote = [0.05,0.8,0.15]
+
+#with open('IA_synthetic_USCensusDist_full_data_Output.csv', newline='') as csvfile:
+#    features = list(csv.reader(csvfile))
+
+#with open('k_3_anon_IA_USCensusDist_data_full.csv', newline='') as csvfile:
+#    features = list(csv.reader(csvfile))
+
+with open('k_30_anon_IA_USCensusDist_data_full.csv', newline='') as csvfile:
+    features = list(csv.reader(csvfile))
+    
+features = np.delete(features, [0], 0)
+features = np.delete(features, [0,1,9], 1)
+    
+labels = np.random.choice(v_vote, len(features), p=p_vote)
+
+X_train, X_test, y_train, y_test = train_test_split(
+    features,
+    labels,
+    test_size=0.3,
+    random_state=42,
+)
+
+clf = tree.DecisionTreeClassifier()
+clf.fit(X=X_train, y=y_train)
+clf.feature_importances_ 
+clf.score(X=X_test, y=y_test)
+
+--------------------------
+
+target,
+a_vote = ['NA','D','R']
+v_vote = [0,1,2]
+p_vote = [0.1,0.5,0.4]
+
+raw data, clf.score(X=X_test, y=y_test) 
+0.4512926367510273
+k=2, actual k=17, clf.score(X=X_test, y=y_test) 
+0.5024924706615432
+k=30, actual k=156, clf.score(X=X_test, y=y_test) 
+0.5045695295461626
+
+---------------------------
+
+target
+a_vote = ['NA','D','R']
+v_vote = [0,1,2]
+p_vote = [0.05,0.8,0.15]
+
+raw data, clf.score(X=X_test, y=y_test) 
+0.7616710883729176
+k=3, actual k=17, clf.score(X=X_test, y=y_test) 
+0.7995118911621144
+k=30, actual k=156, clf.score(X=X_test, y=y_test) 
+0.8010177588534635
