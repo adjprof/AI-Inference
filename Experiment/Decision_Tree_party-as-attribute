@@ -1,0 +1,13 @@
+1.1: Supervised; party as attribute, predict vote
+
+-Synthetic data (list which are syn)
+-Synthetic votes/labels
+-Real data: 65% acc
+[[48494 14122   398]
+ [12055  3421   104]
+ [  271   100     1]]
+
+-Anonymized data: 78%
+[[61483  1348     7]
+ [15366   344     6]
+ [  401    11     0]]
