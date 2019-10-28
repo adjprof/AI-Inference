@@ -3,12 +3,14 @@
 -Synthetic attributes (???)
 -True party as labels
 
--Real Data: 
 -IA_synthetic_full_data_Output_Oct21.csv
--37% accuracy
+-Real Data: 37% acc
 [[13831  9412  8080]
  [ 9895  9176  6564]
  [ 8488  6951  6569]]
 
-
--Anonymized data: 
+-k_3_anon_IA_data_full_Oct21.csv
+-Anonymized data: 40 % acc
+[[18705  9197  3421]
+ [13580 10008  2047]
+ [13256  5602  3150]]
