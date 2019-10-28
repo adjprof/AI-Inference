@@ -36,7 +36,6 @@ target,
 a_vote = ['NA','D','R']
 v_vote = [0,1,2]
 p_vote = [0.1,0.5,0.4]
-
 raw data, clf.score(X=X_test, y=y_test) 
 0.4512926367510273
 k=2, actual k=17, clf.score(X=X_test, y=y_test) 
@@ -51,9 +50,32 @@ a_vote = ['NA','D','R']
 v_vote = [0,1,2]
 p_vote = [0.05,0.8,0.15]
 
-raw data, clf.score(X=X_test, y=y_test) 
+raw data, 
+clf.score(X=X_test, y=y_test) 
 0.7616710883729176
-k=3, actual k=17, clf.score(X=X_test, y=y_test) 
-0.7995118911621144
-k=30, actual k=156, clf.score(X=X_test, y=y_test) 
+print(accuracy_score(y_train, y_predict))
+0.8279802447694771
+print(confusion_matrix(y_train, y_predict))
+[[  3973  14370    118]
+ [  1512 292659    790]
+ [   515  46086   8487]]
+
+k=3, actual k=17, 
+clf.score(X=X_test, y=y_test) 
+0.8014331706303873
+print(accuracy_score(y_train, y_predict))
+0.8005786135529097
+print(confusion_matrix(y_train, y_predict))
+[[    0  2338     0]
+ [    0 35974     0]
+ [    0  6623     0]]
+
+k=30, actual k=156, 
+clf.score(X=X_test, y=y_test) 
 0.8010177588534635
+print(accuracy_score(y_train, y_predict))
+0.8000445087348392
+print(confusion_matrix(y_train, y_predict))
+[[    0  2202     0]
+ [    0 35950     0]
+ [    0  6783     0]]
