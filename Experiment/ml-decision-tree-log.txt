@@ -54,6 +54,12 @@ print(confusion_matrix(y_train, y_predict))
 [[  9546  19770   7569]
  [  3212 153568  27347]
  [  2866  76740  67892]]
+print(accuracy_score(y_test, y_predict))
+0.4538190245230572
+print(confusion_matrix(y_test, y_predict))
+[[  756 10590  4363]
+ [ 3744 53363 21981]
+ [ 3040 42542 17554]]
 
 k=2, actual k=17, 
 clf.score(X=X_test, y=y_test) 
@@ -64,16 +70,28 @@ print(confusion_matrix(y_train, y_predict))
 [[    0  4374   149]
  [    0 21650   642]
  [    0 17401   719]]
- 
+print(accuracy_score(y_test, y_predict))
+0.5008827500259633
+print(confusion_matrix(y_test, y_predict))
+[[   0 1873   35]
+ [   0 9545  141]
+ [   0 7563  101]]
+
 k=30, actual k=156, 
 clf.score(X=X_test, y=y_test) 
-0.49444386748364316
+0.4953785439817219
 print(accuracy_score(y_train, y_predict))
 0.49974407477467453
 print(confusion_matrix(y_train, y_predict))
 [[    0  4419    71]
  [    0 22209   215]
  [    0 17774   247]]
+print(accuracy_score(y_test, y_predict))
+0.4953785439817219
+print(confusion_matrix(y_test, y_predict))
+ [[   0 2014   34]
+ [   0 9383  193]
+ [   0 7477  157]]
  
 ---------------------------
 
