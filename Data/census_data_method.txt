@@ -1,0 +1,27 @@
+How to get demographic data from census
+
+American FactFinder views of census data were deprecated in July 2019 (and will disappear in 2020) so this process uses the advanced data search at https://data.census.gov/cedsci/advanced.
+
+American Community Survey - 2018 1-year estimates
+
+The urls below do display estimated data in the browser, but the download cvs versions are unwieldy, in that they have hundreds of columns and few rows.  Even using something like google sheets transpose() function to reformat, the filters are not changeable, and only very few cells of data can be mapped to the ML voter model.
+
+Each of these census data cells are only estimates, explicitly fuzzed to preserve privacy, but also because these 1-yr snapshots are estimates from the 2010 data collection period.  The stated margins of error can become exceptionally high.
+
+
+EDUCATIONAL ATTAINMENT 
+https://data.census.gov/cedsci/table?q=education&lastDisplayedRow=28&table=S1501&tid=ACSST1Y2018.S1501&t=Education
+
+MEDIAN INCOME IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS) 
+https://data.census.gov/cedsci/table?q=income&lastDisplayedRow=26&table=S1903&tid=ACSST1Y2018.S1903&t=Income%20and%20Earnings
+
+HOUSEHOLDS AND FAMILIES 
+The geographic and other filters disappear with each change of table, and they are not stored in the url
+https://data.census.gov/cedsci/table?q=household&lastDisplayedRow=26&table=S1101&tid=ACSST1Y2018.S1101&t=Household%20and%20Family&g=5001600US1901
+
+Note that all of these tables are available via REST API, and it is easy to request a key, so all serious developers should take this route. Start with the “request a key” link at left.
+https://www.census.gov/data/developers/data-sets.html
+At this time, it doesn’t send any email with any key, but shows "Your request for a new API key has been successfully submitted. Please check your email. In a few minutes you should receive a message with instructions on how to activate your new key."
+
+This is the documentation for the American Community Survey specifically:
+https://www.census.gov/data/developers/data-sets/acs-1year.html
