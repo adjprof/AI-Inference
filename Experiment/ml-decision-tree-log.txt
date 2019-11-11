@@ -105,6 +105,9 @@ p_vote = [0.1,0.5,0.4]
 raw data, 
 clf.score(X=X_test, y=y_test) 
 0.3447537879987083
+print(clf.feature_importances_)
+[0.07505206 0.16789159 0.30759816 0.08315063 0.09612233 0.12856784
+ 0.1416174 ]
 print(confusion_matrix(y_train, y_predict))
 [[ 4659  5625  5404]
  [23528 27834 27821]
@@ -113,6 +116,9 @@ print(confusion_matrix(y_train, y_predict))
 k=3, actual k=17, 
 clf.score(X=X_test, y=y_test) 
 0.30787205317270744
+print(clf.feature_importances_)
+[0.18958284 0.09377221 0.15102419 0.1461727  0.20074926 0.2186988
+ 0.        ]
 print(confusion_matrix(y_train, y_predict))
 [[ 749  499  676]
  [3757 2400 3557]
@@ -121,6 +127,9 @@ print(confusion_matrix(y_train, y_predict))
 k=30, actual k=156, 
 clf.score(X=X_test, y=y_test) 
 0.2869456849101672
+print(clf.feature_importances_)
+[0.         0.25470692 0.04887635 0.17153918 0.27674238 0.24813516
+ 0.        ]
 print(confusion_matrix(y_train, y_predict))
 [[ 826  394  680]
  [4275 1921 3459]
