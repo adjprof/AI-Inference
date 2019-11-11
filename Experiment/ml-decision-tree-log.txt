@@ -100,7 +100,7 @@ clf = tree.DecisionTreeClassifier(criterion="entropy", splitter="random", class_
 target
 a_vote = ['NA','D','R']
 v_vote = [0,1,2]
-p_vote = [0.05,0.8,0.15]
+p_vote = [0.1,0.5,0.4]
 
 raw data, 
 clf.score(X=X_test, y=y_test) 
