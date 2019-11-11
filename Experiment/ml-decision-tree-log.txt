@@ -108,7 +108,7 @@ clf.score(X=X_test, y=y_test)
 print(clf.feature_importances_)
 [0.07505206 0.16789159 0.30759816 0.08315063 0.09612233 0.12856784
  0.1416174 ]
-print(confusion_matrix(y_train, y_predict))
+print(confusion_matrix(y_test, y_predict))
 [[ 4659  5625  5404]
  [23528 27834 27821]
  [18798 22309 21955]]
@@ -119,7 +119,7 @@ clf.score(X=X_test, y=y_test)
 print(clf.feature_importances_)
 [0.18958284 0.09377221 0.15102419 0.1461727  0.20074926 0.2186988
  0.        ]
-print(confusion_matrix(y_train, y_predict))
+print(confusion_matrix(y_test, y_predict))
 [[ 749  499  676]
  [3757 2400 3557]
  [2979 1861 2780]]
@@ -130,7 +130,7 @@ clf.score(X=X_test, y=y_test)
 print(clf.feature_importances_)
 [0.         0.25470692 0.04887635 0.17153918 0.27674238 0.24813516
  0.        ]
-print(confusion_matrix(y_train, y_predict))
+print(confusion_matrix(y_test, y_predict))
 [[ 826  394  680]
  [4275 1921 3459]
  [3422 1502 2779]]
