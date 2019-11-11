@@ -94,6 +94,8 @@ print(confusion_matrix(y_test, y_predict))
  [   0 7477  157]]
  
 ---------------------------
+# with additional paramaters on classifier
+clf = tree.DecisionTreeClassifier(criterion="entropy", splitter="random", class_weight="balanced")
 
 target
 a_vote = ['NA','D','R']
@@ -102,30 +104,24 @@ p_vote = [0.05,0.8,0.15]
 
 raw data, 
 clf.score(X=X_test, y=y_test) 
-0.7616710883729176
-print(accuracy_score(y_train, y_predict))
-0.8279802447694771
+0.3447537879987083
 print(confusion_matrix(y_train, y_predict))
-[[  3973  14370    118]
- [  1512 292659    790]
- [   515  46086   8487]]
+[[ 4659  5625  5404]
+ [23528 27834 27821]
+ [18798 22309 21955]]
 
 k=3, actual k=17, 
 clf.score(X=X_test, y=y_test) 
-0.8014331706303873
-print(accuracy_score(y_train, y_predict))
-0.8005786135529097
+0.30787205317270744
 print(confusion_matrix(y_train, y_predict))
-[[    0  2338     0]
- [    0 35974     0]
- [    0  6623     0]]
+[[ 749  499  676]
+ [3757 2400 3557]
+ [2979 1861 2780]]
 
 k=30, actual k=156, 
 clf.score(X=X_test, y=y_test) 
-0.8010177588534635
-print(accuracy_score(y_train, y_predict))
-0.8000445087348392
+0.2869456849101672
 print(confusion_matrix(y_train, y_predict))
-[[    0  2202     0]
- [    0 35950     0]
- [    0  6783     0]]
+[[ 826  394  680]
+ [4275 1921 3459]
+ [3422 1502 2779]]
